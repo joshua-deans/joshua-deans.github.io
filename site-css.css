@@ -10,6 +10,11 @@ h5, h6, p {
 .card {
     border-radius:0px;
 }
+
+.card-img-top {
+    border-radius:0px;
+}
+
 .jumbotron {
     padding:15px;
     background-color:#292F33;
