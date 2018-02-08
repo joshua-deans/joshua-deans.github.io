@@ -1,18 +1,22 @@
 body {
-    background-color: #DDD;
+    background-color: #D9D9D9;
 }
+
 h1, h2, h3, h4 {
     font-family: Roboto, sans-serif;
+    font-weight: 800;
 }
 h5, h6, p {
     font-family: "Open Sans", sans-serif;
 }
 .card {
-    border-radius:0px;
+    border-radius:4px;
+    box-shadow: 2px 5px 5px #888888;
 }
 
 .card-img-top {
-    border-radius:0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .jumbotron {
