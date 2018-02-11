@@ -33,6 +33,10 @@ h5, h6, p {
     margin-right:5px;
 }
 
+.logo-link {
+    color: white;
+}
+
 #links {
     float: right;
 }
