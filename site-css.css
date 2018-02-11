@@ -9,6 +9,11 @@ h1, h2, h3, h4 {
 h5, h6, p {
     font-family: "Open Sans", sans-serif;
 }
+
+.link:hover {
+    color: #D9D9D9;
+}
+
 .card {
     border-radius:4px;
     box-shadow: 2px 5px 5px #888888;
@@ -22,4 +27,8 @@ h5, h6, p {
 .jumbotron {
     padding:15px;
     background-color:#292F33;
+}
+
+#links {
+    float: right;
 }
