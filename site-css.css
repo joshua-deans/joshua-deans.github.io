@@ -37,6 +37,10 @@ h5, h6, p {
     color: white;
 }
 
+.display-6 {
+    display: block;
+}
+
 #links {
     float: right;
 }
