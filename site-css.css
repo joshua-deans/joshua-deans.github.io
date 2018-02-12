@@ -10,10 +10,6 @@ h5, h6, p {
     font-family: "Open Sans", sans-serif;
 }
 
-.link {
-    margin: 3px;
-}
-
 .link:hover {
     color: #B9B9B9;
 }
@@ -42,10 +38,11 @@ h5, h6, p {
 }
 
 .display-6 {
-    display: block;
+    display: inline;
+    font-size: 2rem;
 }
 
 #links {
     float: right;
-    line-height: 48px;
+    margin-left: 15px;
 }
