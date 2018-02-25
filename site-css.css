@@ -2,10 +2,8 @@ body {
     background-color: #D9D9D9;
 }
 
-h1, h2, h3, h4, .navbar-brand {
+h1, h2, h3, h4 {
     font-family: Roboto, sans-serif;
-    font-weight: 800;
-    font-size: 1.6rem;
     letter-spacing: 1px;
 }
 
@@ -15,6 +13,10 @@ h5, h6, p, li, a {
 
 p {
     margin-bottom: 8px;
+}
+
+img {
+    width: 180px;
 }
 
 ul:not(.navbar-nav) {
@@ -48,9 +50,9 @@ li:last-child {
     margin-bottom: 0;
 }
 
-nav {
-    margin-bottom: 1.8rem;
+.jumbotron {
     background-color:#292F33;
+    color: white;
     padding: 5px 4px;
 }
 
@@ -88,10 +90,6 @@ nav {
 
 .fa-calendar-alt {
     margin-right:5px;
-}
-
-.logo-link {
-    color: white;
 }
 
 #links {
