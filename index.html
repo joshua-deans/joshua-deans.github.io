@@ -14,9 +14,9 @@
 </head>
 <body class="text-dark">
 <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="container font-weight-light small" id="main-text">
         <h1 class="text-center">Joshua Deans</h1>
-        <h4 class="text-center" id="mod-padding">Second Degree Computer Science Student at Simon Fraser University</h4>
+        <h4 class="text-center" id="mod-padding">Computer Science Student at Simon Fraser University</h4>
     </div>
 </div>
 <img class="img-thumbnail rounded-circle mx-auto d-block" src="SelfImage.jpg">
@@ -24,14 +24,18 @@
     <div class="row">
         <div class="col-12">
             <div class="container-fluid">
-                <div class="card">
-                    <div class="card-body">
-                        <a class="logo-link" href="https://www.linkedin.com/in/joshua-deans-7b894ba3/"><i class="fab fa-linkedin fa-lg link"></i></a>
-                        <a class="logo-link" href="https://github.com/joshua-deans"><i class="fab fa-github fa-lg link"></i></a>
-                        <p>I am a Second degree SFU CS student. My previous degree was in Civil Engineering from UBC.</p>
-                        <div class="mx-auto">
+                <div class="card" id="top-card">
+                    <div class="card-body mx-auto text-center">
+                        <div class="container">
+                            <a class="logo-link" href="mailto:jdeans@sfu.com"><i class="fas fa-envelope fa-lg link"></i></a>
+                            <a class="logo-link" href="https://www.linkedin.com/in/joshua-deans-7b894ba3/"><i class="fab fa-linkedin fa-lg link"></i></a>
+                            <a class="logo-link" href="https://github.com/joshua-deans"><i class="fab fa-github fa-lg link"></i></a>
+                            <p class="text-justify" id="description">
+                                I am a Second degree Computing Science student at Simon Fraser University.
+                                My previous degree was in Civil Engineering from University of British Columbia.
+                            </p>
                             <a class="btn btn-info" href="Joshua Deans - Resume.pdf">
-                                Download CV
+                                DOWNLOAD CV
                             </a>
                         </div>
                     </div>
@@ -42,19 +46,12 @@
     <br>
     <div class="row">
         <!-- Left side of body -->
-        <div class="col-md-4 col-sm-5">
+        <div class="col-md-6">
             <div class="card">
-                <img class="card-img-top img-fluid" src="SelfImage.jpg">
-                <br>
-                <div class="card-body">
-                    <h4 class="card-title"> <i class="fas fa-info-circle"></i> <strong>About Me</strong></h4>
-                    <p>I am a Second degree SFU CS student. My previous degree was in Civil Engineering from UBC.</p>
-                </div>
-            </div>
-            <br>
-            <div class="card">
-                <div class="card-body">
+                <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-code"></i> <strong>Skills</strong></h4>
+                </div>
+                <div class="card-body">
                     <ul>
                         <li>Python</li>
                         <li>Javascript</li>
@@ -66,41 +63,55 @@
                 </div>
             </div>
             <br>
-        </div>
-        <div class="col-md-8 col-sm-7 text-left">
-            <div class="card" >
-                <div class="card-body">
+            <div class="card">
+                <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-briefcase"></i> <strong>Work Experience</strong></h4>
+                </div>
+                <div class="card-body">
                     <div class="container-fluid">
                         <h5><strong>Kiewit</strong></h5>
                         <p>Port Mann/Highway 1 Engineer Intern</p>
-                        <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2015 - Aug 2015</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2015 - Aug 2015</p>
+                        </span>
                         <hr>
                         <h5><strong>BC Hydro</strong></h5>
                         <p>Public Safety and Project Support Co-op</p>
-                        <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
+                        </span>
                     </div>
                 </div>
             </div>
             <br>
+        </div>
+        <div class="col-md-6 text-left">
             <div class="card">
-                <div class="card-body">
+                <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h4>
+                </div>
+                <div class="card-body">
                     <div class="container-fluid">
                         <h5><strong>Simon Fraser University</strong></h5>
                         <p>Bachelor of Science in Computer Science, Second Degree</p>
-                        <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2017 - current</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2017 - current</p>
+                        </span>
                         <hr>
                         <h5><strong>University of British Columbia</strong></h5>
                         <p>Bachelor of Applied Science in Civil Engineering</p>
-                        <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2011 - Apr 2016</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2011 - Apr 2016</p>
+                        </span>
                     </div>
                 </div>
             </div>
             <br>
             <div class="card">
+                <div class="card-header align-middle">
+                    <h4 class="card-title"> <i class="fas fa-laptop"></i> Projects</h4>
+                </div>
                 <div class="card-body">
-                    <h3 class="card-title"> <i class="fas fa-laptop"></i> Projects</h3>
                     <div class="container-fluid">
                         <p>The following is a list of all of my projects with a link to my GitHub (ordered from most recent):</p>
                         <ul class="text-links">
@@ -114,8 +125,10 @@
             </div>
             <br>
             <div class="card">
-                <div class="card-body">
+                <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="far fa-smile"></i> <strong>Interests</strong></h4>
+                </div>
+                <div class="card-body">
                     <ul>
                         <li>Cooking</li>
                         <li>Fitness</li>
