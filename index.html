@@ -14,12 +14,12 @@
 </head>
 <body class="text-dark">
 
-<div class="jumbotron jumbotron-fluid">
+<header class="jumbotron jumbotron-fluid">
     <div class="container font-weight-light small" id="main-text">
         <h1 class="text-center">Joshua Deans</h1>
-        <h4 class="text-center" id="mod-padding">Computer Science Student at Simon Fraser University</h4>
+        <h4 class="text-center">Computer Science Student at Simon Fraser University</h4>
     </div>
-</div>
+</header>
 <img class="img-thumbnail rounded-circle mx-auto d-block" src="image/SelfImage.jpg">
 <div class="container-fluid">
     <div class="row">
@@ -33,10 +33,21 @@
                         <p class="text-justify" id="description">
                             I am a second degree Computing Science student at Simon Fraser University.
                             My previous degree was in Civil Engineering from University of British Columbia.
-                            Throughout my first degree, I gradually realized that I preferred the tech sector.
+                            Throughout my first degree, I gradually realized that I was much better suited to be in the tech sector.
+                            However, I am very happy for my previous experience, as many of the technical skills and transferable skills
+                            transfer well into my current degree.<br><br>
+                            My first language was Python due to its simplicity and ease of use. It was a great choice, as I was able to
+                            make a wide range of projects using the many libraries.
+                            Next, I learned C and C++ in my SFU courses, which provided me with a deeper understanding of lower-level programming languages.<br><br>
+                            Currently, I am learning a wide array of web technologies from both a front-end perspective (HTML/CSS/Javascript),
+                            and a back-end perspective (NodeJS). Creating this website has allowed me to explore the front-end side of
+                            web development.
                         </p>
-                        <a class="btn btn-info" href="Joshua Deans - Resume.pdf">
+                        <a class="btn btn-info m-2" href="Joshua Deans - Resume.pdf">
                             DOWNLOAD CV
+                        </a>
+                        <a class="btn btn-info m-2" href="#contact-link">
+                            CONTACT ME
                         </a>
                     </div>
                 </div>
@@ -130,8 +141,8 @@
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>Cooking</li>
                         <li>Fitness</li>
+                        <li>Cooking</li>
                         <li>Tech</li>
                         <li>Travel</li>
                     </ul>
@@ -142,7 +153,46 @@
     </div>
 </div>
 
-<br>
+<br id="contact-link">
+
+<div class="container-fluid">
+    <div class="card mx-auto" id="contact-card">
+        <div class="card-header align-middle">
+            <h4 class="card-title"><strong>Contact</strong></h4>
+        </div>
+        <div class="card-body">
+            <div class="container-fluid">
+                <p>Feel free to send me a message through the form below if you would like to contact me.</p>
+                <br>
+                <form method="POST" action="http://serverlessform.com/api/form/ed9bda80-cf4f-506b-ada7-5b97a8578080/form-response">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" class="form-control" name="First Name" id="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="text" class="form-control" name="Last Name" id="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" class="form-control" name="E-mail address" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label><br>
+                        <textarea name="Message" style="height:200px" class="form-control" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<footer class="jumbotron jumbotron-fluid">
+    <div class="container">
+    </div>
+</footer>
 
 </body>
 </html>
