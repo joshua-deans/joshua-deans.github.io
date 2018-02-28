@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Raleway" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/site-css.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body class="text-dark">
 
@@ -164,7 +166,7 @@
             <div class="container-fluid">
                 <p>Feel free to send me a message through the form below if you would like to contact me.</p>
                 <br>
-                <form method="POST" action="http://serverlessform.com/api/form/ed9bda80-cf4f-506b-ada7-5b97a8578080/form-response">
+                <form method="POST" action="https://83fga9tfk9.execute-api.us-east-1.amazonaws.com/Prod" id="contact-us-form">
                     <div class="form-group">
                         <label for="first-name">First Name:</label><br>
                         <input type="text" class="form-control" name="First Name" id="first-name" required>
@@ -179,20 +181,20 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label><br>
-                        <textarea name="Message" style="height:200px" class="form-control" id="message" required></textarea>
+                        <textarea name="Message" style="height:200px" class="form-control" id="message" placeholder="Enter message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="submit" class="btn btn-info g-recaptcha"
+                            data-sitekey="6LdrWS0UAAAAAPAokGKpRhrObJkaaCX0EMsEiofN"
+                            data-callback="onContactUsSubmit">
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>
     </div>
     <br>
+    <script type="text/javascript" src="js/contact.js"></script>
 </div>
-
-<footer class="jumbotron jumbotron-fluid">
-    <div class="container">
-    </div>
-</footer>
 
 </body>
 </html>
