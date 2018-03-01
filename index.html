@@ -13,14 +13,30 @@
     <link rel="stylesheet" type="text/css" href="css/site-css.css">
 </head>
 <body class="text-dark">
-
+<!--
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav nav-pills">
+            <li class="nav-item active">
+                <a class="nav-link" href="#top-card">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">RESUME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-link">CONTACT ME</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+-->
 <header class="jumbotron jumbotron-fluid">
     <div class="container font-weight-light small" id="main-text">
         <h1 class="text-center">Joshua Deans</h1>
         <h4 class="text-center">Computer Science Student at Simon Fraser University</h4>
     </div>
 </header>
-<img class="img-thumbnail rounded-circle mx-auto d-block" src="image/SelfImage.jpg">
+<img class="img-thumbnail rounded-circle mx-auto d-block" id="self-image" src="image/SelfImage.jpg">
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
@@ -55,7 +71,7 @@
         </div>
     </div>
     <br>
-    <div class="row">
+    <div class="row" id="resume">
         <!-- Left side of body -->
         <div class="col-md-6">
             <div class="card">
@@ -90,6 +106,27 @@
                         <p>Public Safety and Project Support Co-op</p>
                         <span class="badge badge-pill badge-info">
                             <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header align-middle">
+                    <h4 class="card-title"> <i class="fas fa-globe"></i> <strong>Volunteer Experience</strong></h4>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <h5><strong>Learning Buddies</strong></h5>
+                        <p>Math Tutor</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2017 - Jul 2017</p>
+                        </span>
+                        <hr>
+                        <h5><strong>International Volunteer HQ</strong></h5>
+                        <p>Orphanage Volunteer - Ho Chi Minh City, Vietnam</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Aug 2014</p>
                         </span>
                     </div>
                 </div>
@@ -158,7 +195,7 @@
 <div class="container-fluid">
     <div class="card mx-auto" id="contact-card">
         <div class="card-header align-middle">
-            <h4 class="card-title"><strong>Contact</strong></h4>
+            <h4 class="card-title"> <i class="fas fa-comment-alt"></i> <strong>Contact Me</strong></h4>
         </div>
         <div class="card-body">
             <div class="container-fluid">
