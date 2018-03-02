@@ -55,6 +55,7 @@ li:first-child:not(.nav-item) {
 }
 
 li:last-child:not(.nav-item) {
+    padding-bottom: 4px;
     border-bottom: 0;
     margin-bottom: 0;
 }
@@ -118,6 +119,15 @@ i {
 
 .card-title {
     margin-bottom: 0;
+}
+
+.results {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.result-list {
+    font-size: .9rem;
 }
 
 .date {
