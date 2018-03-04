@@ -11,17 +11,37 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Raleway" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/site-css.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body class="text-dark">
-<!--
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
+<body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Joshua Deans</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav nav-pills">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#top-card">ABOUT ME</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#resume">RESUME</a>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    RESUME
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#skills-start">SKILLS</a>
+                    <a class="dropdown-item" href="#work-start">WORK EXPERIENCE</a>
+                    <a class="dropdown-item" href="#volunteer-start">VOLUNTEER EXPERIENCE</a>
+                    <a class="dropdown-item" href="#edu-start">EDUCATION</a>
+                    <a class="dropdown-item" href="#project-start">PROJECTS</a>
+                    <a class="dropdown-item" href="#interest-start">INTERESTS</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact-link">CONTACT ME</a>
@@ -29,7 +49,7 @@
         </ul>
     </div>
 </nav>
--->
+
 <header class="jumbotron jumbotron-fluid">
     <div class="container font-weight-light small" id="main-text">
         <h1 class="text-center">Joshua Deans</h1>
@@ -62,7 +82,7 @@
                         <a class="btn btn-info m-2" href="Joshua Deans - Resume.pdf">
                             DOWNLOAD CV
                         </a>
-                        <a class="btn btn-info m-2" href="#contact-link">
+                        <a class="btn btn-info m-2" href="#contact-link" id="skills-start">
                             CONTACT ME
                         </a>
                     </div>
@@ -85,7 +105,7 @@
                         <li>C/C++</li>
                         <li>Git</li>
                         <li>HTML/CSS</li>
-                        <li>Bootstrap</li>
+                        <li id="work-start">Bootstrap</li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +124,7 @@
                         <hr>
                         <h5><strong>BC Hydro</strong></h5>
                         <p>Public Safety and Project Support Co-op</p>
-                        <span class="badge badge-pill badge-info">
+                        <span class="badge badge-pill badge-info" id="volunteer-start">
                             <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
                         </span>
                     </div>
@@ -133,7 +153,7 @@
             </div>
             <br>
         </div>
-        <div class="col-md-6 text-left">
+        <div class="col-md-6 text-left" id="edu-start">
             <div class="card">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h4>
@@ -159,7 +179,7 @@
                         <ul class="result-list">
                             <li>2015W Deans Honour List</li>
                             <li>Civil Capstone Design Award (2016 Graduate Class)</li>
-                            <li>Grade Average (Percent): 78%</li>
+                            <li id="project-start">Grade Average (Percent): 78%</li>
                         </ul>
                     </div>
                 </div>
@@ -176,7 +196,7 @@
                             <li><a href="https://github.com/joshua-deans/joshua-deans.github.io">This website! (HTML/CSS/Bootstrap)</a></li>
                             <li><a href="https://github.com/joshua-deans/rottentomatoes-grapher-deans">Rotten Tomatoes Grapher (Python w/ Tkinter and matplotlib)</a></li>
                             <li><a href="https://github.com/joshua-deans/2048-deans">2048 (Python w/ Pygame)</a></li>
-                            <li><a href="https://github.com/joshua-deans/snake-deans">Snake (Python w/ Pygame)</a></li>
+                            <li id="interest-start"><a href="https://github.com/joshua-deans/snake-deans">Snake (Python w/ Pygame)</a></li>
                         </ul>
                     </div>
                 </div>

@@ -44,7 +44,7 @@ li a {
     transition: font-size 0.3s;
 }
 
-li a:not(.logo-link):hover {
+.text-links li a:hover {
     text-decoration: none;
     font-size: 108%;
 }
@@ -64,11 +64,17 @@ i {
     padding-right: 9px;
 }
 
+nav {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
 .jumbotron {
     background-color: #292F33;
     color: white;
     padding: 5px 4px;
+    padding-top: 4.0em;
     padding-bottom: 100px;
+
 }
 
 .container-fluid {
@@ -119,6 +125,10 @@ i {
 
 .card-title {
     margin-bottom: 0;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #17a2b8;
 }
 
 .results {
