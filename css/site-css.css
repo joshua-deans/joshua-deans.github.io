@@ -104,13 +104,17 @@ nav {
 
 .card {
     border-radius:4px;
+    -webkit-box-shadow: 2px 5px 5px #888888;
     box-shadow: 2px 5px 5px #888888;
-    -webkit-transition: box-shadow 0.4s, transform 0.4s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: -webkit-box-shadow 0.4s, -webkit-transform 0.4s;
+    transition: -webkit-box-shadow 0.4s, -webkit-transform 0.4s;
+    -o-transition: box-shadow 0.4s, transform 0.4s;
     transition: box-shadow 0.4s, transform 0.4s;
-
+    transition: box-shadow 0.4s, transform 0.4s, -webkit-box-shadow 0.4s, -webkit-transform 0.4s;
 }
 
 .card:hover {
+    -webkit-box-shadow: 3px 8px 5px #888888;
     box-shadow: 3px 8px 5px #888888;
     -ms-transform: scale(1.018, 1.018); /* IE 9 */
     -webkit-transform: scale(1.018, 1.018); /* Safari */
@@ -125,6 +129,10 @@ nav {
 
 .card-title {
     margin-bottom: 0;
+}
+
+#navbardrop:focus {
+    background-color: #17a2b8;
 }
 
 .nav-pills .nav-link.active, .btn-info{
