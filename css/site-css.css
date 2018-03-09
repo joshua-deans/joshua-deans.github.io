@@ -182,3 +182,14 @@ nav {
 #description {
     padding: 10px 0;
 }
+
+#myProgress {
+    margin-top: 53px;
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 4px;
+    background-color: #17a2b8;
+}
