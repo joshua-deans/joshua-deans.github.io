@@ -159,6 +159,12 @@ nav {
     font-size: .9rem;
 }
 
+.desc-list {
+    font-size: .9rem;
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+}
+
 .date {
     padding: 3px;
     margin:0;
@@ -182,7 +188,7 @@ nav {
 }
 
 #contact-card {
-    max-width:900px;
+    max-width:700px;
 }
 
 #links {
@@ -203,6 +209,6 @@ nav {
 }
 #myBar {
     width: 0%;
-    height: 5px;
+    height: 6px;
     background-color: #17a2b8;
 }
