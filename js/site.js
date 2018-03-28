@@ -33,3 +33,8 @@ function adjustBar(){
     var percent = (window.scrollY/maxScroll * 100);
     progressBar.style.width = percent.toString() + '%';
 }
+
+$('a[href*=\\#]').on('click', function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
