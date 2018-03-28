@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Raleway" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/site-css.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -60,7 +61,7 @@
         <h4 class="text-center">Computer Science Student at Simon Fraser University</h4>
     </div>
 </header>
-<img class="img-thumbnail rounded-circle mx-auto d-block" id="self-image" src="image/SelfImage2.jpg">
+<img id="self-image"  class="img-thumbnail rounded-circle mx-auto d-block" src="image/SelfImage2-min.jpg">
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
@@ -98,7 +99,7 @@
     <div class="row" id="resume">
         <!-- Left side of body -->
         <div class="col-md-6">
-            <div class="card">
+            <div class="card" id="skills">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-code"></i> <strong>Skills</strong></h4>
                 </div>
@@ -114,7 +115,7 @@
                 </div>
             </div>
             <br>
-            <div class="card">
+            <div class="card" id="work-exp">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-briefcase"></i> <strong>Work Experience</strong></h4>
                 </div>
@@ -125,40 +126,36 @@
                         <span class="badge badge-pill badge-info">
                             <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2015 - Aug 2015</p>
                         </span>
+                        <!--<ul class="desc-list">-->
+                            <!--<li>Coordinated and optimized traffic closures daily for the night shift traffic crew-->
+                                <!--through collaboration and compromise with various conflicting parties,-->
+                                <!--resulting in efficient operation throughout the project.</li>-->
+                            <!--<li>Planned the completion of remaining project punchlist tasks,-->
+                                <!--resulting in upwards of one hundred tasks being completed.</li>-->
+                            <!--<li>Facilitated the sale of salvage items on the project,-->
+                                <!--resulting in tens of thousands of dollars being returned to the project.</li>-->
+                            <!--<li>Led purchasing of signs, traffic equipment, safety equipment, structural materials,-->
+                                <!--and other required items for the entire Onshore team.</li>-->
+                        <!--</ul>-->
                         <hr>
                         <h5><strong>BC Hydro</strong></h5>
                         <p>Public Safety and Project Support Co-op</p>
-                        <span class="badge badge-pill badge-info" id="volunteer-start">
+                        <span class="badge badge-pill badge-info" id="edu-start">
                             <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
                         </span>
+                        <!--<ul class="desc-list">-->
+                            <!--<li>Updated seven Public Safety Management Plans, providing guidelines for BC Hydro-->
+                                <!--generation facilities to ensure that they comply with public safety rules.</li>-->
+                            <!--<li>Supported in Public Safety Education operations, relating to teaching public-->
+                                <!--safety to firefighters, paramedics, police and trades workers.</li>-->
+                            <!--<li>Provided project support for public safety projects,-->
+                                <!--ensuring that public safety standards were met.</li>-->
+                        <!--</ul>-->
                     </div>
                 </div>
             </div>
             <br>
-            <div class="card">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-globe"></i><strong> Volunteer Experience</strong></h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <h5><strong>Learning Buddies</strong></h5>
-                        <p>Math Tutor</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2017 - Jul 2017</p>
-                        </span>
-                        <hr>
-                        <h5><strong>International Volunteer HQ</strong></h5>
-                        <p>Orphanage Volunteer - Ho Chi Minh City, Vietnam</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Aug 2014</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-        <div class="col-md-6 text-left" id="edu-start">
-            <div class="card">
+            <div class="card" id="education">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h4>
                 </div>
@@ -189,7 +186,38 @@
                 </div>
             </div>
             <br>
+        </div>
+        <div class="col-md-6 text-left" id="volunteer-start">
             <div class="card">
+                <div class="card-header align-middle">
+                    <h4 class="card-title"> <i class="fas fa-globe"></i><strong> Volunteer Experience</strong></h4>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <h5><strong>Learning Buddies</strong></h5>
+                        <p>Math Tutor</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2017 - Jul 2017</p>
+                        </span>
+                        <ul class="desc-list">
+                            <li>Provided one-on-one tutoring assistance to an elementary school student struggling with mathematics.</li>
+                            <li>Mentored student to improve his self-esteem and attitude towards academics.</li>
+                        </ul>
+                        <hr>
+                        <h5><strong>International Volunteer HQ</strong></h5>
+                        <p>Orphanage Volunteer - Ho Chi Minh City, Vietnam</p>
+                        <span class="badge badge-pill badge-info">
+                            <p class="date"> <i class="far fa-calendar-alt"></i>  Aug 2014</p>
+                        </span>
+                        <ul class="desc-list">
+                            <li>Entertained, engaged and cared for young Vietnamese orphans, ranging from newborns to ten year olds.</li>
+                            <li>Assisted in performing rehabilitative activities for a disabled orphan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card" id="projects">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="fas fa-laptop"></i> <strong>Personal Projects</strong></h4>
                 </div>
@@ -197,6 +225,7 @@
                     <div class="container-fluid">
                         <p>The following is a list of all of my projects with a link to my GitHub (ordered from most recent):</p>
                         <ul class="text-links">
+                            <li><a href="http://actor-grapher-actor-grapher.193b.starter-ca-central-1.openshiftapps.com/">Actor Grapher (NodeJS)</a></li>
                             <li><a href="https://github.com/joshua-deans/joshua-deans.github.io">This website! (HTML/CSS/Bootstrap)</a></li>
                             <li><a href="https://github.com/joshua-deans/rottentomatoes-grapher-deans">Rotten Tomatoes Grapher (Python w/ Tkinter and matplotlib)</a></li>
                             <li><a href="https://github.com/joshua-deans/2048-deans">2048 (Python w/ Pygame)</a></li>
@@ -206,7 +235,7 @@
                 </div>
             </div>
             <br>
-            <div class="card">
+            <div class="card" id="interests">
                 <div class="card-header align-middle">
                     <h4 class="card-title"> <i class="far fa-smile"></i> <strong>Interests</strong></h4>
                 </div>
@@ -247,8 +276,7 @@
                         <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message:</label>
-                        <br>
+                        <label for="message">Message:</label><br>
                         <textarea name="message" style="height:200px" class="form-control" id="message" placeholder="Say something!" required></textarea>
                     </div>
                     <input type="hidden" name="_subject" value="New submission from joshuadeans.com!" />
@@ -260,7 +288,6 @@
     </div>
     <br>
 </div>
-
 <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
