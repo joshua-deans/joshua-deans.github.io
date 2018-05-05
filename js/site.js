@@ -1,5 +1,10 @@
 window.sr = ScrollReveal();
 
+sr.reveal('#navbarID', {origin: 'top', scale: 1});
+sr.reveal('#myProgress', {origin: 'top', scale: 1});
+
+sr.reveal('#main-text', {distance: '0 px', scale: 0.4, delay: 20});
+
 sr.reveal('#self-image', {distance: '0 px', scale: 0.4, delay: 70});
 
 sr.reveal('#top-card', {scale: 1, distance: '100px', delay: 170});
