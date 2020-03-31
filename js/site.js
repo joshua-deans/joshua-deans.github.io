@@ -1,29 +1,4 @@
-window.sr = ScrollReveal();
-
-sr.reveal('#navbarID', {origin: 'top', scale: 1});
-sr.reveal('#myProgress', {origin: 'top', scale: 1});
-
-sr.reveal('#main-text', {distance: '0 px', scale: 0.4, delay: 20});
-
-sr.reveal('#self-image', {distance: '0 px', scale: 0.4, delay: 70});
-
-sr.reveal('#top-card', {scale: 1, distance: '100px', delay: 170});
-
-sr.reveal('#skills', {origin: 'left'});
-
-sr.reveal('#work-exp', {origin: 'left'});
-
-sr.reveal('#education', {origin: 'left'});
-
-sr.reveal('#volunteer-start', {origin: 'right'});
-
-sr.reveal('#projects', {origin: 'right'});
-
-sr.reveal('#interests', {origin: 'right'});
-
-sr.reveal('#contact-card');
-
-var progressBar = document.querySelector("#myBar");
+const progressBar = document.querySelector("#myBar");
 
 window.addEventListener("scroll", function(event){
     adjustBar();
@@ -34,8 +9,8 @@ window.addEventListener("resize", function(event){
 });
 
 function adjustBar(){
-    var maxScroll = document.body.scrollHeight - window.innerHeight;
-    var percent = (window.scrollY/maxScroll * 100);
+    let maxScroll = document.body.scrollHeight - window.innerHeight;
+    let percent = (window.scrollY/maxScroll * 100);
     progressBar.style.width = percent.toString() + '%';
 }
 

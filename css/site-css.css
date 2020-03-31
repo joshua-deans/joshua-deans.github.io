@@ -171,6 +171,14 @@ nav {
     font-size: .8rem;
 }
 
+.skill-item {
+    width: 50%;
+}
+
+.no-bottom-border {
+    border-bottom: 0 !important;
+}
+
 #navbardrop:focus {
     background-color: #17a2b8;
 }
@@ -211,4 +219,10 @@ nav {
     width: 0%;
     height: 6px;
     background-color: #17a2b8;
+}
+
+#skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

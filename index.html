@@ -1,279 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Joshua Deans">
-    <meta name="description" content="Joshua Deans">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Deans</title>
-    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Raleway" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/site-css.css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="author" content="Joshua Deans">
+  <meta name="description" content="Joshua Deans">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Deans</title>
+  <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto|Raleway" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/site-css.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </head>
+
 <body class="text-dark" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbarID">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbarID">
     <!-- Brand -->
     <a class="navbar-brand" href="#top">Joshua Deans</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse align-top" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#top-card">ABOUT ME</a>
-            </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    RESUME
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#skills-start">SKILLS</a>
-                    <a class="dropdown-item" href="#work-start">WORK EXPERIENCE</a>
-                    <a class="dropdown-item" href="#edu-start">EDUCATION</a>
-                    <a class="dropdown-item" href="#volunteer-start">VOLUNTEER EXPERIENCE</a>
-                    <a class="dropdown-item" href="#project-start">PROJECTS</a>
-                    <a class="dropdown-item" href="#interest-start">INTERESTS</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact-link">CONTACT ME</a>
-            </li>
-        </ul>
+      <ul class="navbar-nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#top-card">ABOUT ME</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            RESUME
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#skills-start">SKILLS</a>
+            <a class="dropdown-item" href="#work-start">WORK EXPERIENCE</a>
+            <a class="dropdown-item" href="#edu-start">EDUCATION</a>
+            <a class="dropdown-item" href="#volunteer-start">VOLUNTEER EXPERIENCE</a>
+            <a class="dropdown-item" href="#project-start">PROJECTS</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-link">CONTACT ME</a>
+        </li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<div id="myProgress" class="fixed-top align-bottom">
+  <div id="myProgress" class="fixed-top align-bottom">
     <div id="myBar"></div>
-</div>
+  </div>
 
-<header class="jumbotron jumbotron-fluid" id="top">
+  <header class="jumbotron jumbotron-fluid" id="top">
     <div class="container font-weight-light small" id="main-text">
-        <h1 class="text-center">Joshua Deans</h1>
-        <h4 class="text-center">Computer Science Student at Simon Fraser University</h4>
+      <h1 class="text-center">Joshua Deans</h1>
+      <h4 class="text-center">Computer Science Student at Simon Fraser University</h4>
     </div>
-</header>
-<img id="self-image"  class="img-thumbnail rounded-circle mx-auto d-block" src="image/SelfImage2-min.jpg">
-<div class="container-fluid">
+  </header>
+  <img id="self-image" class="img-thumbnail rounded-circle mx-auto d-block" src="image/SelfImage2-min.jpg">
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            <div class="card mx-auto" id="top-card">
-                <div class="card-body mx-auto text-center">
-                    <div class="container">
-                        <a class="logo-link" href="mailto:jdeans@sfu.com"><i class="fas fa-envelope fa-lg link"></i></a>
-                        <a class="logo-link" href="https://www.linkedin.com/in/joshua-deans-7b894ba3/"><i class="fab fa-linkedin fa-lg link"></i></a>
-                        <a class="logo-link" href="https://github.com/joshua-deans"><i class="fab fa-github fa-lg link"></i></a>
-                        <p class="text-justify" id="description">
-                            I am a second-degree Computing Science student at Simon Fraser University.
-                            My previous degree was in Civil Engineering from the University of British Columbia.
-                            Throughout my first degree, I gradually realized that I was much better suited to be in the tech sector. However, I am very happy with my previous experience, as many of the technical and transferable skills help with my current degree.<br><br>
-                            Throughout my time as a student, I have learned many different technologies. I have created a wide array of web and Android projects. In order to create these projects, I have learned JavaScript, Python, Java, C and SQL. <br><br>
-                        </p>
-                        <a class="btn btn-info m-2" href="Joshua Deans - Resume.pdf">
-                            DOWNLOAD CV
-                        </a>
-                        <a class="btn btn-info m-2" href="#contact-link" id="skills-start">
-                            CONTACT ME
-                        </a>
-                    </div>
-                </div>
+      <div class="col-12">
+        <div class="card mx-auto" id="top-card">
+          <div class="card-body mx-auto text-center">
+            <div class="container">
+              <a class="logo-link" href="mailto:jdeans@sfu.com"><i class="fas fa-envelope fa-lg link"></i></a>
+              <a class="logo-link" href="https://www.linkedin.com/in/joshua-deans-7b894ba3/"><i
+                  class="fab fa-linkedin fa-lg link"></i></a>
+              <a class="logo-link" href="https://github.com/joshua-deans"><i class="fab fa-github fa-lg link"></i></a>
+              <p class="text-justify" id="description">
+                I am a second-degree Computing Science student at Simon Fraser University.
+                My previous degree was in Civil Engineering from the University of British Columbia.
+                Throughout my first degree, I gradually realized that I was much better suited to be in the tech sector.
+                However, I am very happy with my previous experience, as many of the technical and transferable skills
+                help with my current degree.<br><br>
+                Throughout my time as a student, I have learned many different technologies. I have created a wide array
+                of web and Android projects. In order to create these projects, I have learned JavaScript, Python, Java,
+                C and SQL. <br>
+              </p>
+              <a class="btn btn-info m-2" href="Joshua Deans - Resume.pdf">
+                DOWNLOAD CV
+              </a>
+              <a class="btn btn-info m-2" href="#contact-link" id="skills-start">
+                CONTACT ME
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <br>
     <div class="row" id="resume">
-        <!-- Left side of body -->
-        <div class="col-md-6">
-            <div class="card" id="skills">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-code"></i> <strong>Skills</strong></h4>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>NodeJS</li>
-                        <li>SQL</li>
-                        <li>React</li>
-                        <li>Python</li>
-                        <li id="work-start">Git</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="card" id="work-exp">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-briefcase"></i> <strong>Work Experience</strong></h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <h5><strong>Jostle</strong></h5>
-                        <p>Java Developer Intern</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2019 - Aug 2019</p>
-                        </span>
-                        <hr>
-                        <h5><strong>Kiewit</strong></h5>
-                        <p>Port Mann/Highway 1 Engineer Intern</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2015 - Aug 2015</p>
-                        </span>
-                        <hr>
-                        <h5><strong>BC Hydro</strong></h5>
-                        <p>Public Safety and Project Support Co-op</p>
-                        <span class="badge badge-pill badge-info" id="edu-start">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  May 2013 - Dec 2013</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card" id="education">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <h5><strong>Simon Fraser University</strong></h5>
-                        <p>Bachelor of Science in Computer Science, Second Degree</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2017 - current</p>
-                        </span>
-                        <p class="results"><strong>Results:</strong></p>
-                        <ul class="result-list">
-                            <li>Current GPA: 3.82/4.33</li>
-                        </ul>
-                        <hr>
-                        <h5><strong>University of British Columbia</strong></h5>
-                        <p>Bachelor of Applied Science in Civil Engineering</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Sept 2011 - Apr 2016</p>
-                        </span>
-                        <p class="results"><strong>Results:</strong></p>
-                        <ul class="result-list">
-                            <li>2015W Deans Honour List</li>
-                            <li>Civil Capstone Design Award (2016 Graduate Class)</li>
-                            <li>Grade Average (Percent): 78%</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br>
+      <!-- Left side of body -->
+      <div class="col-md-6">
+        <div class="card" id="skills">
+          <div class="card-header align-middle">
+            <h4 class="card-title"> <i class="fas fa-code"></i> <strong>Skills</strong></h4>
+          </div>
+          <div class="card-body">
+            <ul id="skill-list">
+              <li class="skill-item">Java</li>
+              <li class="skill-item">Javascript</li>
+              <li class="skill-item">NodeJS</li>
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">React</li>
+              <li class="skill-item">Python</li>
+              <li class="skill-item">C++</li>
+              <li class="skill-item">Git</li>
+              <li class="skill-item">Object-Oriented Design</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item no-bottom-border">Data Structures and Algorithms</li>
+              <li class="skill-item" id="work-start">Web Development</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6 text-left">
-            <div class="card" id="volunteer-start">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-globe"></i><strong> Volunteer Experience</strong></h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <h5><strong>Learning Buddies</strong></h5>
-                        <p>Math Tutor</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Jan 2017 - Jul 2017</p>
-                        </span>
-                        <ul class="desc-list">
-                            <li>Provided one-on-one tutoring assistance to an elementary school student struggling with mathematics.</li>
-                            <li>Mentored student to improve his self-esteem and attitude towards academics.</li>
-                        </ul>
-                        <hr>
-                        <h5><strong>International Volunteer HQ</strong></h5>
-                        <p>Orphanage Volunteer - Ho Chi Minh City, Vietnam</p>
-                        <span class="badge badge-pill badge-info">
-                            <p class="date"> <i class="far fa-calendar-alt"></i>  Aug 2014</p>
-                        </span>
-                        <ul class="desc-list">
-                            <li>Entertained, engaged and cared for young Vietnamese orphans, ranging from newborns to ten year olds.</li>
-                            <li id="project-start">Assisted in performing rehabilitative activities for a disabled orphan.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card" id="projects">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="fas fa-laptop"></i> <strong>Personal Projects</strong></h4>
-                </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <p>The following is a list of all of my projects with a link to my GitHub (ordered from most recent):</p>
-                        <ul class="text-links">
-                            <li><a href="https://github.com/joshua-deans/duke-it-out">Duke It Out (nwHacks 2019) (NodeJS/React/MySQL)</a></li>
-                            <li><a href="https://github.com/joshua-deans/Carpool">Carpool Web App (PHP/Laravel/MySQL)</a></li>
-                        	<li><a href="https://github.com/joshua-deans/FitnessTracker">FitTrkr (Python/Flask/MySQL)</a></li>
-                        	<li><a href="https://github.com/joshua-deans/Walking-Group">Walking Group App (Android/Java)</a></li>
-                        	<li><a href="https://github.com/joshua-deans/task-list-app">Task List App (NodeJS/MongoDB)</a></li>
-                            <li><a href="https://actor-grapher-228803.appspot.com/">Actor Grapher (NodeJS)</a></li>
-                            <li><a href="https://github.com/joshua-deans/joshua-deans.github.io">This website! (HTML/CSS/Bootstrap)</a></li>
-                            <li><a href="https://github.com/joshua-deans/rottentomatoes-grapher-deans">Rotten Tomatoes Grapher (Python w/ Tkinter and matplotlib)</a></li>
-                            <li><a href="https://github.com/joshua-deans/2048-deans">2048 (Python w/ Pygame)</a></li>
-                            <li id="interest-start"><a href="https://github.com/joshua-deans/snake-deans">Snake (Python w/ Pygame)</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card" id="interests">
-                <div class="card-header align-middle">
-                    <h4 class="card-title"> <i class="far fa-smile"></i> <strong>Interests</strong></h4>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Fitness</li>
-                        <li>Cooking</li>
-                        <li>Tech</li>
-                        <li>Travel</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-        </div>
-    </div>
-</div>
-
-<br id="contact-link">
-
-<div class="container-fluid">
-    <div class="card mx-auto" id="contact-card">
-        <div class="card-header align-middle">
-            <h4 class="card-title"> <i class="fas fa-comment-alt"></i> <strong>Contact Me</strong></h4>
-        </div>
-        <div class="card-body">
+        <br>
+        <div class="card" id="work-exp">
+          <div class="card-header align-middle">
+            <h4 class="card-title"> <i class="fas fa-briefcase"></i> <strong>Work Experience</strong></h4>
+          </div>
+          <div class="card-body">
             <div class="container-fluid">
-                <p>Feel free to send me a message through the form below if you would like to contact me.</p>
-                <br>
-                <form action="https://formspree.io/joshua.deans21@gmail.com"
-                      method="POST">
-                    <input type="text" name="_gotcha" style="display:none" />
-                    <div class="form-group">
-                        <label for="name">Name:</label><br>
-                        <input type="text" class="form-control" name="Name" id="name" placeholder="Enter name"  required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter e-mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label><br>
-                        <textarea name="message" style="height:200px" class="form-control" id="message" placeholder="Say something!" required></textarea>
-                    </div>
-                    <input type="hidden" name="_subject" value="New submission from joshuadeans.com!" />
-                    <input type="hidden" name="_next" value="#" />
-                    <button type="submit" value="Send" class="btn btn-info">Submit</button>
-                </form>
+              <h5><strong>Jostle</strong></h5>
+              <p>Java Developer Intern</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Jan 2019 - Aug 2019</p>
+              </span>
+              <hr>
+              <h5><strong>Kiewit</strong></h5>
+              <p>Port Mann/Highway 1 Engineer Intern</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Jan 2015 - Aug 2015</p>
+              </span>
+              <hr>
+              <h5><strong>BC Hydro</strong></h5>
+              <p>Public Safety and Project Support Co-op</p>
+              <span class="badge badge-pill badge-info" id="edu-start">
+                <p class="date"> <i class="far fa-calendar-alt"></i> May 2013 - Dec 2013</p>
+              </span>
             </div>
+          </div>
         </div>
+        <br>
+        <div class="card" id="education">
+          <div class="card-header align-middle">
+            <h4 class="card-title"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h4>
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">
+              <h5><strong>Simon Fraser University</strong></h5>
+              <p>Bachelor of Science in Computer Science, Second Degree</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Sept 2017 - current</p>
+              </span>
+              <p class="results"><strong>Results:</strong></p>
+              <ul class="result-list">
+                <li>Current GPA: 3.67/4.33</li>
+              </ul>
+              <hr>
+              <h5><strong>University of British Columbia</strong></h5>
+              <p>Bachelor of Applied Science in Civil Engineering</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Sept 2011 - Apr 2016</p>
+              </span>
+              <p class="results"><strong>Results:</strong></p>
+              <ul class="result-list">
+                <li>2015W Deans Honour List</li>
+                <li>Civil Capstone Design Award (2016 Graduate Class)</li>
+                <li>Grade Average (Percent): 78%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="col-md-6 text-left">
+        <div class="card" id="volunteer-start">
+          <div class="card-header align-middle">
+            <h4 class="card-title"> <i class="fas fa-globe"></i><strong> Volunteer Experience</strong></h4>
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">
+              <h5><strong>Learning Buddies</strong></h5>
+              <p>Math Tutor</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Jan 2017 - Jul 2017</p>
+              </span>
+              <ul class="desc-list">
+                <li>Provided one-on-one tutoring assistance to an elementary school student struggling with mathematics.
+                </li>
+                <li>Mentored student to improve his self-esteem and attitude towards academics.</li>
+              </ul>
+              <hr>
+              <h5><strong>International Volunteer HQ</strong></h5>
+              <p>Orphanage Volunteer - Ho Chi Minh City, Vietnam</p>
+              <span class="badge badge-pill badge-info">
+                <p class="date"> <i class="far fa-calendar-alt"></i> Aug 2014</p>
+              </span>
+              <ul class="desc-list">
+                <li>Entertained, engaged and cared for young Vietnamese orphans, ranging from newborns to ten year olds.
+                </li>
+                <li id="project-start">Assisted in performing rehabilitative activities for a disabled orphan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card" id="projects">
+          <div class="card-header align-middle">
+            <h4 class="card-title"> <i class="fas fa-laptop"></i> <strong>Personal Projects</strong></h4>
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">
+              <p>The following is a list of all of my projects with a link to my GitHub (ordered from most recent):</p>
+              <ul class="text-links">
+                <li><a href="https://github.com/joshua-deans/duke-it-out">Duke It Out (nwHacks 2019)
+                    (NodeJS/React/MySQL)</a></li>
+                <li><a href="https://github.com/joshua-deans/Carpool">Carpool Web App (PHP/Laravel/MySQL)</a></li>
+                <li><a href="https://github.com/joshua-deans/FitnessTracker">FitTrkr (Python/Flask/MySQL)</a></li>
+                <li><a href="https://github.com/joshua-deans/Walking-Group">Walking Group App (Android/Java)</a></li>
+                <li><a href="https://github.com/joshua-deans/task-list-app">Task List App (NodeJS/MongoDB)</a></li>
+                <li><a href="https://actor-grapher-228803.appspot.com/">Actor Grapher (NodeJS)</a></li>
+                <li><a href="https://github.com/joshua-deans/joshua-deans.github.io">This website!
+                    (HTML/CSS/Bootstrap)</a></li>
+                <li><a href="https://github.com/joshua-deans/rottentomatoes-grapher-deans">Rotten Tomatoes Grapher
+                    (Python w/ Tkinter and matplotlib)</a></li>
+                <li><a href="https://github.com/joshua-deans/2048-deans">2048 (Python w/ Pygame)</a></li>
+                <li id="interest-start"><a href="https://github.com/joshua-deans/snake-deans">Snake (Python w/
+                    Pygame)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <br id="contact-link">
+
+  <div class="container-fluid">
+    <div class="card mx-auto" id="contact-card">
+      <div class="card-header align-middle">
+        <h4 class="card-title"> <i class="fas fa-comment-alt"></i> <strong>Contact Me</strong></h4>
+      </div>
+      <div class="card-body">
+        <div class="container-fluid">
+          <p>Feel free to send me a message through the form below if you would like to contact me.</p>
+          <br>
+          <form action="https://formspree.io/joshua.deans21@gmail.com" method="POST">
+            <input type="text" name="_gotcha" style="display:none" />
+            <div class="form-group">
+              <label for="name">Name:</label><br>
+              <input type="text" class="form-control" name="Name" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label><br>
+              <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter e-mail">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label><br>
+              <textarea name="message" style="height:200px" class="form-control" id="message"
+                placeholder="Say something!" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New submission from joshuadeans.com!" />
+            <input type="hidden" name="_next" value="#" />
+            <button type="submit" value="Send" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
     <br>
-</div>
-<script type="text/javascript" src="js/site.js"></script>
+  </div>
+  <script type="text/javascript" src="js/site.js"></script>
 </body>
+
 </html>
