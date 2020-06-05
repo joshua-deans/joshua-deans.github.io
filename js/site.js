@@ -16,5 +16,6 @@ function adjustBar(){
 
 $('a[href*=\\#]').on('click', function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    let top = Math.max(0, $(this.hash).offset().top - 60);
+    $('html,body').animate({scrollTop: top}, 500);
 });
